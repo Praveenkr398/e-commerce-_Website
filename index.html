@@ -16,17 +16,20 @@
         <div class="log">
             <a href="index.html"><img src="img/logo.png" alt="website logo"></a>
         </div>
-        <div class="nav">
+        <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="kart.html">
-                        <i class="fa fa-shopping-bag"></i>
-                    </a></li>
+                <li id="lg-bag"><a href="kart.html"> <i class="fa fa-shopping-bag"></i></a></li>
+                <a href="#" id="close" > <i class="fa fa-times"></i></a>
             </ul>
+        </div>
+        <div id="mobile">
+            <a href="kart.html"> <i class="fa fa-shopping-bag"></i></a>
+            <i id="bar" class="fa fa-outdent"></i>
         </div>
     </div>
 
@@ -361,7 +364,7 @@
         </div>
     </section>
 
-    <!-- newsletter --> 
+    <!-- newsletter -->
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign Up for Newsletter</h4>
@@ -382,20 +385,20 @@
         <div class="col">
             <img class="logo" src="img/logo.png" alt="">
             <h4>Contact</h4>
-                    <p>Address: Ram Krishna Nagar, Patna Bihar</p>
-                    <p>Phone: +91 3873948820</p>
-                    <p>Hours: 10:00 - 18:00, Mon - Sat</p>
-                <div class="follow">
-                    <h4>Follow Us</h4>
-                    <div class="icon">
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-pinterest"></i>
-                        <i class="fa fa-youtube"></i>
-                    </div>
+            <p>Address: Ram Krishna Nagar, Patna Bihar</p>
+            <p>Phone: +91 3873948820</p>
+            <p>Hours: 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-youtube"></i>
                 </div>
-            
+            </div>
+
         </div>
 
         <div class="col">
@@ -416,7 +419,7 @@
         </div>
         <div class="col install">
             <h4>
-                Install App 
+                Install App
             </h4>
             <p>From App Store or PlayStore</p>
             <div class="row">
@@ -428,9 +431,11 @@
         </div>
 
     </footer>
-        <div class="copyright">
-            &copy; Cara Online Ecommerce, 2024
-        </div>
+    <div class="copyright">
+        &copy; Cara Online Ecommerce, 2024
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
