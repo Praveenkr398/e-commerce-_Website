@@ -41,8 +41,8 @@ button.normal {
     font-size: 14px;
     font-weight: 600;
     padding: 15px 30px;
-    color: black;
-    background-color: white;
+    color: rgb(255, 255, 255);
+    background-color:#088178;
     border-radius: 4px;
     cursor: pointer;
     border: none;
@@ -437,7 +437,7 @@ body {
 
 #newsletter {
     display: flex;
-    height: 25vh;
+    height: 30vh;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -565,7 +565,7 @@ footer .col a {
 
 /* Shop Page */
 
-#page-header{
+#page-header {
     background-image: url(img/banner/b1.jpg);
     width: 100%;
     height: 40vh;
@@ -577,15 +577,16 @@ footer .col a {
     padding: 14px;
 }
 
-#page-header h2,#page-header p{
+#page-header h2,
+#page-header p {
     color: #fff;
 }
 
-#pagination{
+#pagination {
     text-align: center;
 }
 
-#pagination a{
+#pagination a {
     text-decoration: none;
     background-color: #088;
     padding: 15px 20px;
@@ -602,93 +603,98 @@ footer .col a {
 
 /* single product */
 
-#product-details{
+#product-details {
     display: flex;
     margin-top: 20px;
 }
 
-#product-details .single-pro-image{
+#product-details .single-pro-image {
     width: 40%;
     margin-right: 50px;
 }
 
-.small-img-group{
+.small-img-group {
     display: flex;
     justify-content: space-between;
-   
+
 }
 
-.small-img-col{
+.small-img-col {
     flex-basis: 24%;
     cursor: pointer;
 }
 
-#product-details .single-pro-details{
+#product-details .single-pro-details {
     width: 50%;
     padding-top: 30px;
 }
 
-#product-details .single-pro-details h4{
+#product-details .single-pro-details h4 {
     padding: 40px 0 20px 0;
 }
 
-#product-details .single-pro-details h2{
-   font-size: 26px;
+#product-details .single-pro-details h2 {
+    font-size: 26px;
 }
-#product-details .single-pro-details select{
+
+#product-details .single-pro-details select {
     display: block;
     padding: 5px 10px;
     margin-bottom: 10px;
 }
-#product-details .single-pro-details input{
+
+#product-details .single-pro-details input {
     width: 50px;
     height: 47px;
     padding-left: 10px;
     font-size: 16px;
     margin-right: 10px;
 }
-#product-details .single-pro-details button{
-   background-color: #088;
-   color: #fff;
+
+#product-details .single-pro-details button {
+    background-color: #088;
+    color: #fff;
 }
 
-#product-details .single-pro-details input:focus{
+#product-details .single-pro-details input:focus {
     outline: none;
 }
 
 
-#product-details .single-pro-details span{
+#product-details .single-pro-details span {
     line-height: 25px;
 }
 
 
 /* Blog Page */
-#page-header.blog-header{
- background-image: url(img/banner/b19.jpg);
+#page-header.blog-header {
+    background-image: url(img/banner/b19.jpg);
 }
-#blog{
+
+#blog {
     padding: 150px 150px 0 150px;
 }
 
-#blog .blog-box{
+#blog .blog-box {
     display: flex;
     align-items: center;
     width: 100%;
     position: relative;
-    padding-bottom:90px ;
+    padding-bottom: 90px;
 }
 
-#blog .blog-img{
+#blog .blog-img {
     width: 50%;
     margin-right: 40px;
 }
 
-#blog img{
+#blog img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
-#blog .blog-details{
+
+#blog .blog-details {
     width: 50%;
     padding-right: 48px;
 }
@@ -701,7 +707,8 @@ footer .col a {
     position: relative;
     transition: 0.3s;
 }
-#blog .blog-details a::after{
+
+#blog .blog-details a::after {
     content: "";
     width: 50px;
     height: 1px;
@@ -711,15 +718,15 @@ footer .col a {
     right: -60px;
 }
 
-#blog .blog-details a:hover{
+#blog .blog-details a:hover {
     color: #088178;
 }
 
-#blog .blog-details a:hover::after{
+#blog .blog-details a:hover::after {
     background-color: #088;
 }
 
-#blog .blog-box h1{
+#blog .blog-box h1 {
     position: absolute;
     top: -60px;
     left: 0;
@@ -730,7 +737,7 @@ footer .col a {
 }
 
 /* About Page */
-#page-header.about-header{
+#page-header.about-header {
     background-image: url(img/about/banner.png);
 }
 
@@ -738,34 +745,265 @@ footer .col a {
     display: flex;
     align-items: center;
 }
-#about-head img{
+
+#about-head img {
     width: 50%;
     height: auto;
     border-radius: 30px;
 }
-#about-head div{
+
+#about-head div {
     padding-left: 40px;
 }
 
-#about-app{
+#about-app {
     text-align: center;
 }
 
-#about-app .video{
+#about-app .video {
     width: 70%;
     height: 70%;
-  margin: 30px auto 0 auto;
+    margin: 30px auto 0 auto;
 }
 
-#about-app .video video{
+#about-app .video video {
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
 
+/* Contact page */
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+    width: 40%;
+}
+
+#contact-details .details span,
+#from-details form span {
+    font-size: 12px;
+}
+
+#contact-details .details h2,
+#from-details form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3 {
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+
+#contact-details .details li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#from-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    margin: 30px;
+    border: 1px solid #088178;
+}
+
+#from-details form {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+#from-details form input,
+#from-details form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+#from-details form input:hover,
+#from-details form textarea:hover {
+    border: 1px solid #088178;
+}
+
+#from-details form button {
+    background-color: #088;
+    color: rgb(255, 252, 252);
+    font-size: 18px;
+}
+
+#from-details .people div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#from-details .people div img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#from-details .people div p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#from-details .people div p span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* cart page */
+#cart{
+    overflow: hidden;
+}
+#cart table{
+   
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    width: 100%;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150%;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250%;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150%;
+    text-align: center;
+}
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+    border: 1px solid #e2e2e2;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead th{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart table tbody td{
+    padding-top: 15px;
+}
+#cart table tbody td{
+font-size: 13px;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#cart-add #coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3{
+    padding-bottom: 15px;
+}
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #088;
+}
+#coupon button,
+#subtotal button{
+    background-color: #088;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e2e2;
+    padding: 30px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    font-size: 13px;
+
+}
+
+
+
 
 /* start making responsive website */
-
 
 /* ipad responsive */
 @media (max-width:799px) {
@@ -863,6 +1101,14 @@ footer .col a {
     #newsletter .form {
         width: 70%;
     }
+
+    /* contact page */
+    #from-details {
+    padding: 40px;
+    }
+    #from-details form {
+        width: 50%;
+    }
 }
 
 /* mobile responsive */
@@ -936,11 +1182,12 @@ footer .col a {
     }
 
     /* single product mobile */
-    #product-details{
+    #product-details {
         display: flex;
         flex-direction: column;
     }
-    #product-details .single-pro-image{
+
+    #product-details .single-pro-image {
         width: 100%;
     }
 
@@ -949,7 +1196,7 @@ footer .col a {
     }
 
     /* blog page */
-    #blog{
+    #blog {
         padding: 100px 20px 0 20px;
     }
 
@@ -958,31 +1205,75 @@ footer .col a {
         flex-direction: column;
         align-items: flex-start;
     }
-    #blog .blog-img{
+
+    #blog .blog-img {
         width: 100%;
         margin-right: 0px;
         margin-bottom: 30px;
     }
+
     #blog .blog-details {
         width: 100%;
         text-align: center;
     }
 
     /* about page */
-    #about-head{
-      
+    #about-head {
+
         flex-direction: column;
     }
 
-    #about-head img{
+    #about-head img {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    #about-head div{
+    #about-head div {
         padding-left: 0px;
     }
-    #about-app video{
+
+    #about-app video {
         width: 100%;
+    }
+
+    /* contact page */
+    #contact-details {
+        flex-direction: column;
+    }
+    #contact-details .details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact-details .map{
+        width: 100%;
+    }
+    #from-details {
+       border: 1px solid gray;
+        margin: 10px;
+        padding: 30px 10px;
+       flex-wrap: wrap;
+        
+    }
+    #from-details form {
+        width: 100%;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    #newsletter {
+       
+        height: 30vh;
+        
+    }
+
+    /* cart page */
+    #cart-add {
+       flex-direction: column;
+    }
+    #cart-add #coupon {
+        width: 100%
+    }
+    #subtotal{
+        width: 100%;
+        padding: 20px;
     }
 }
